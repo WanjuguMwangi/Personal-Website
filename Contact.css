@@ -1,0 +1,199 @@
+/* contact.css */
+
+:root {
+    --indigo: #1a1a40;
+    --gold: #c1a45f;
+    --clay: #a45a49;
+    --ivory: #fdfcf9;
+    --accent: #e3d5b8;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--ivory);
+    color: var(--indigo);
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .site-header {
+    background: linear-gradient(90deg, var(--indigo), var(--clay));
+    padding: 2rem 2rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-bar a:hover {
+    color: var(--gold);
+  }
+  
+  .contact-container {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+  
+  .contact-info h1 {
+    font-size: 2.2rem;
+    color: var(--clay);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .contact-info p,
+  .details p {
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+    text-align: center;
+  }
+  
+  .details {
+    text-align: center;
+  }
+  
+  .details a {
+    color: var(--indigo);
+    text-decoration: underline;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .contact-form p {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: var(--ivory);
+    color: var(--indigo);
+  }
+  
+  button {
+    background-color: var(--clay);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: var(--gold);
+  }
+  
+  .site-footer {
+    background: linear-gradient(90deg, var(--clay), var(--indigo));
+    color: #fff;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .site-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .site-footer a {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .site-footer a:hover {
+    color: var(--gold);
+  }
+  
+  @media (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .contact-container {
+      padding: 1.5rem;
+    }
+  
+    input,
+    textarea {
+      font-size: 0.95rem;
+    }
+  
+    button {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-info h1 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-form h2 {
+      font-size: 1.3rem;
+    }
+  
+    button {
+      padding: 0.6rem 1.2rem;
+    }
+  }
+  
