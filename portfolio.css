@@ -1,0 +1,132 @@
+:root {
+    --indigo: #1a1a40;
+    --gold: #c1a45f;
+    --clay: #a45a49;
+    --ivory: #fdfcf9;
+    --accent: #e3d5b8;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--ivory);
+    color: var(--indigo);
+    line-height: 1.7;
+  }
+  
+  .site-header {
+    background: linear-gradient(90deg, var(--indigo), var(--clay));
+    padding: 2rem 2rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-bar a:hover {
+    color: var(--gold);
+  }
+  
+
+  .portfolio-section {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  
+  .portfolio-section h2 {
+    font-size: 2rem;
+    color: var(--clay);
+  }
+  
+  .portfolio-section p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel-track img {
+    min-width: 100%;
+    object-fit: contain;
+    max-height: 600px;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .view-more a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--clay);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-more a:hover {
+    background-color: var(--gold);
+  }
+  
+  .coming-soon {
+    font-style: italic;
+    color: var(--clay);
+    margin-top: 1rem;
+  }
+  .site-footer {
+    background: linear-gradient(90deg, var(--clay), var(--indigo));
+    color: #fff;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .site-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .carousel-track img {
+      max-height: 400px;
+    }
+  }
+  

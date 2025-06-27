@@ -1,0 +1,190 @@
+/* about.css */
+
+:root {
+    --indigo: #1a1a40;
+    --gold: #c1a45f;
+    --clay: #a45a49;
+    --ivory: #fdfcf9;
+    --accent: #e3d5b8;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--ivory);
+    color: var(--indigo);
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .site-header {
+    background: linear-gradient(90deg, var(--indigo), var(--clay));
+    padding: 2rem 2rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-bar a:hover {
+    color: var(--gold);
+  }
+  
+  .about-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    color: var(--clay);
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+    color: var(--indigo);
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skills li::before,
+  .experience li::before {
+    content: '✦';
+    color: var(--clay);
+    padding-right: 0.5rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .cv-download {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .cv-download a {
+    background-color: var(--clay);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cv-download a:hover {
+    background-color: var(--indigo);
+  }
+  
+  .footer-cta {
+    text-align: center;
+    font-style: italic;
+    color: var(--clay);
+    margin-top: 3rem;
+  }
+  
+  .site-footer {
+    background: linear-gradient(90deg, var(--clay), var(--indigo));
+    color: #fff;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .site-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .about-container {
+      padding: 1.5rem;
+    }
+  
+    .intro h1 {
+      font-size: 2rem;
+    }
+  
+    .intro p,
+    h2 {
+      font-size: 1rem;
+    }
+  
+    .cv-download a {
+      font-size: 0.95rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .intro h1 {
+      font-size: 1.7rem;
+    }
+  
+    .intro p {
+      font-size: 0.95rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .cv-download a {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.9rem;
+    }
+  }
+  
